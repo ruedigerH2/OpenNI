@@ -13,8 +13,8 @@ SRC_FILES = \
 	../../../../Externals/TinyXml/*.cpp
 
 ifeq ("$(OSTYPE)","Darwin")
-	INC_DIRS += /usr/local/include
-	LIB_DIRS += /usr/local/lib
+	INC_DIRS += /opt/local/include
+	LIB_DIRS += /opt/local/lib
 	LDFLAGS += -framework CoreFoundation -framework IOKit
 endif
 

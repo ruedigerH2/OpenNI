@@ -85,7 +85,7 @@ using namespace glh;
 // --------------------------------
 // Defines
 // --------------------------------
-#define SAMPLE_XML_PATH "/usr/local/etc/openni/SamplesConfig.xml"
+#define SAMPLE_XML_PATH "../../../../Data/SamplesConfig.xml"
 
 // --------------------------------
 // Types
