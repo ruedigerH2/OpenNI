@@ -11,8 +11,10 @@ Dependencies:
 - doxygen 
 
 Install:
-1. Create Redist -> run Platform/Linux/CreateRedist/RedistMaker
-2. run install-custom.sh
+1. cd into <Install dir>/Platform/Linux/CreateRedist/
+2. Create Redist -> run RedistMaker
+3. cd into <Install dir>
+4. run install-custom.sh in <Install dir>
 
 
 
