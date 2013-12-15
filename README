@@ -6,6 +6,10 @@ This is a patched version for OS X 10.9 of the unstable branch of OpenNI from ht
 Changes are:
 - Default install location is /usr/local/ (patches from https://wiki.ccs.neu.edu/display/GPC/pcl-trunk+on+OS+X+10.9+with+homebrew)
 
+Dependencies:
+- gnu-sed
+- doxygen 
+
 Install:
 1. Create Redist -> run Platform/Linux/CreateRedist/RedistMaker
 2. run install-custom.sh
