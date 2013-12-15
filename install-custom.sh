@@ -17,13 +17,13 @@ D=`ls -d *-Bin*`
 V=`expr $D : ".*-v\(.*\)"`
 cd $D
 F=openni-dev.pc
-mv ../../../../$F $F
+mv ../../../../"$F.in" "$F.in"
 
 sed -e "s/VERSION/$V/" $F.in > $F
 
 
 # utilities
-printf "copying executables..."
+printf "copying executables...\n"
 ls /usr/local/bin > bin-orig.txt
 cp Bin/ni* Samples/Bin/x64-Release/Ni* /usr/local/bin
 ls /usr/local/bin > bin-new.txt
@@ -31,7 +31,7 @@ diff bin-orig.txt bin-new.txt | cut -d' ' -f2 | grep -E 'ni.*|Ni.*' > ../../../.
 
 
 # copy libraries
-printf "copying shared libraries..."
+printf "copying shared libraries...\n"
 ls /usr/local/lib > lib-orig.txt
 cp Lib/libOpenNI.* Lib/libni* /usr/local/lib
 ls /usr/local/lib > lib-new.txt
@@ -39,14 +39,14 @@ diff lib-orig.txt lib-new.txt | cut -d' ' -f2 | grep -E 'libni.*|libOpenNI.*' > 
 
 
 # include files
-printf "copying include files..."
+printf "copying include files...\n"
 mkdir -p /usr/local/include/ni
 cp -R Include/* /usr/local/include/ni/
 
 
 
 # register modules
-printf "registering modules... "
+printf "registering modules...\n"
 mkdir -p /usr/local/etc/openni
 for f in `ls /usr/local/lib/libni*`; do niReg $f; done
 
