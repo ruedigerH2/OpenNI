@@ -17,7 +17,7 @@ D=`ls -d *-Bin*`
 V=`expr $D : ".*-v\(.*\)"`
 cd $D
 F=openni-dev.pc
-mv ../../../../"$F.in" "$F.in"
+cp ../../../../"$F.in" "$F.in"
 
 sed -e "s/VERSION/$V/" $F.in > $F
 
