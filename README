@@ -3,11 +3,12 @@ OpenNI (Version 1.5.7.10 - Dec 2013)
 
 This is a patched version for OS X 10.9 of the unstable branch of OpenNI from https://github.com/OpenNI/OpenNI
 
-
 Changes are:
 - Default install location is /usr/local/ (patches from https://wiki.ccs.neu.edu/display/GPC/pcl-trunk+on+OS+X+10.9+with+homebrew)
 
-
+Install:
+1. Create Redist -> run Platform/Linux/CreateRedist/RedistMaker
+2. run install-custom.sh
 
 
 
